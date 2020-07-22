@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <title>Blog</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo" style="font-family: 'Dancing Script', cursive">Ambition on fleek</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#photographs" class="nav__link">Photographs</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hey there,<br>I am <span class="home__title-color">Sahenshu</span></h1>
+
+                   <!--<a href="#" class="button">Contact</a>--> 
+                </div>
+
+               <div class="home__social">
+                    <a href="#fam_img" class="home__social-icon" id="fam_icon" onclick="toggleShow()"><i class='bx bxs-home-heart'></i></a>
+                    <a href="#vquote" class="home__social-icon"><i class='bx bxs-quote-alt-left' ></i></a>
+                </div>
+                           
+                <div class="home__img">    
+                    <img src="assets/img/perfil.png" alt="where">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpeg" alt="me">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I am Sahenshu</h2>
+                        <p class="about__text">I am a first year undergrad pursuing my majors in Metallurgical Engineering and Materials Science at IIT Bombay. A little awkward sometimes- cactus and sky enthusiast. Pocrastinating most days, brooding behind a laptop screen the rest. Painting your thoughts or dancing away your troubles is always a good idea. I have lately developed interests in poetry and here's <a href="https://www.youtube.com/watch?v=Q3zpXxnHAP4">one</a> by <a href="https://www.instagram.com/_megharao/"><i>Megha Rao</i></a>, I really like.
+                        </p>           
+                    </div>                                   
+                </div>
+                <img src="assets/img/quote.jpg" class="quote" id="vquote" alt="quote">
+            </section>
+
+           
+            <!--===== Photographs =====-->
+            <section class="work section" id="photographs">
+                <h2 class="section-title">Pictures of the sky</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/work1.jpeg" alt="sky1">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work2.jpeg" alt="sky2">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work3.jpeg" alt="sky3">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work4.jpeg" alt="sky4">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work5.jpg" alt="sky5">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpeg" alt="sky6">
+                    </div>
+                </div>
+            </section>
+            <!--===== PEOPLE =====-->
+            <section class="work section" id="photographs">
+                <h2 class="section-title">Family</h2>
+            <div class="people">
+                <img src="assets/img/people.jpg" alt="Family" class="family_img" id="fam_img">
+            </div>
+            </section>
+                     
+           
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="https://formspree.io/xknqkgve" class="contact__form" method="POST">
+                        <input type="text" name="Name" placeholder="Name" class="contact__input">
+                        <input type="mail" name="_replyto" placeholder="Email" class="contact__input">
+                        <textarea name="Message" id="msg" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+                        <input type="submit" value="Submit" class="contact__button button">
+                    </form> 
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Social Media Handles:</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/sahenshu.soni/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/sahenshu/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            <p>&#169; 2020 copyright all rights reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
