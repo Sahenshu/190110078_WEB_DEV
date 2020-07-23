@@ -64,3 +64,37 @@ sr.reveal('.family_img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 sr.reveal('.contact__button',{interval: 200}); 
+
+/*FORM VALIDATION*/
+function validation()                                    
+{ 
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("msg").value;
+
+    error_message.style.padding="20px";
+
+    if (name.length=="") 
+    {
+        text= "Please enter your name";
+        error_message.innerHTML=text;
+        return false;    
+    }
+
+    if (email.length=="") 
+    {
+        text= "Please enter your email-id";
+        error_message.innerHTML=text;
+        return false;    
+    }
+
+    if (message.length=="") 
+    {
+        text= "Please enter a message";
+        error_message.innerHTML=text;
+        return false;    
+    }
+
+    alert("Form submitted")
+    return true;
+}
