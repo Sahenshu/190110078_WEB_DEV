@@ -320,6 +320,7 @@ img{
   outline: none;
   margin-bottom: var(--mb-4);
 }
+
 .contact__button{
   display: block;
   border: none;
@@ -328,8 +329,20 @@ img{
   cursor: pointer;
   margin-left: auto;
   color: var(--second-color);
- 
-  
+ }
+
+#error_message{
+  margin-bottom: var(--mb-4);
+  padding: 0px;
+  background-color:#33b9a7 ;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28%;
+  border-radius: 0.5rem;
 }
 
 /* ===== FOOTER =====*/
