@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+WE<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -39,11 +39,9 @@
             <section class="home bd-grid" id="home">
                 <div class="home__data">
                     <h1 class="home__title">Hey there,<br>I am <span class="home__title-color">Sahenshu</span></h1>
-
-                   <!--<a href="#" class="button">Contact</a>--> 
                 </div>
 
-               <div class="home__social">
+                <div class="home__social">
                     <a href="#fam_img" class="home__social-icon" id="fam_icon" onclick="toggleShow()"><i class='bx bxs-home-heart'></i></a>
                     <a href="#vquote" class="home__social-icon"><i class='bx bxs-quote-alt-left' ></i></a>
                 </div>
@@ -72,7 +70,7 @@
             </section>
 
            
-            <!--===== Photographs =====-->
+            <!--===== PHOTOGRAPHS =====-->
             <section class="work section" id="photographs">
                 <h2 class="section-title">Pictures of the sky</h2>
 
@@ -111,12 +109,13 @@
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
+                <div id="error_message"></div>
                 <div class="contact__container bd-grid">
-                    <form action="https://formspree.io/xknqkgve" class="contact__form" method="POST">
-                        <input type="text" name="Name" placeholder="Name" class="contact__input">
-                        <input type="mail" name="_replyto" placeholder="Email" class="contact__input">
-                        <textarea name="Message" id="msg" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
-                        <input type="submit" value="Submit" class="contact__button button">
+                    <form name="sendmsg" action="https://formspree.io/xknqkgve" class="contact__form" method="POST" onsubmit="return validation()">
+                      <input type="text" id="name" name="Name" placeholder="Name" class="contact__input" >
+                      <input type="mail" id="email" name="_replyto" placeholder="Email" class="contact__input">
+                      <textarea name="Message" id="msg" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+                      <input type="submit" value="Submit" class="contact__button button">
                     </form> 
                 </div>
             </section>
